@@ -6,8 +6,8 @@ from typing import List, TextIO
 
 
 def linger():
-    signal.signal(signal.SIGHUP, signal.SIG_BLOCK)
-    signal.signal(signal.SIGPIPE, signal.SIG_BLOCK)
+    signal.signal(signal.SIGHUP, signal.SIG_IGN)
+    signal.signal(signal.SIGPIPE, signal.SIG_IGN) # ! this interferes with tee?
 
 
 def eavesdrop(out_file: str, targets: List[TextIO] = [sys.stdout, sys.stdout]):
