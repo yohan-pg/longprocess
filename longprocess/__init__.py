@@ -1,1 +1,1 @@
-from longprocess import *
+from .longprocess import linger, eavesdrop
