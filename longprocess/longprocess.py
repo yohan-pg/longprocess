@@ -4,6 +4,7 @@ import sys
 import os
 from typing import List, TextIO
 
+__all__= ["linger", "evesdrop"]
 
 def linger():
     signal.signal(signal.SIGHUP, signal.SIG_BLOCK)
