@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "longprocess"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["yohan-pg <pg.yohan@gmail.com>"]
 readme = "README.md"
